@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/libs/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function() {
+      $('h1').css({textAlign:'center'});
+      $('#list').css({display:'flex',justifyContent:'center'})
+      $('li').css({listStyle:'none',float:'left',width:'150px',height:'200px',marginRight:'10px',textAlign:'center'})
+      $('li').hide();
+      $('h1').on('click', function() {
+        $('#list li').fadeToggle();
+      })
+    })
+  </script>
+</head>
+<body>
+  <h1>
+    <img src="./img/coco/coco_logo.png" alt="">
+</h1>
+<ul id="list">
+    <li>
+        <img src="./img/coco/image_01.png" alt="">
+        1
+    </li>
+    <li>
+        <img src="./img/coco/image_02.png" alt="">
+        2</li>
+    <li><img src="./img/coco/image_03.png" alt="">3</li>
+    <li><img src="./img/coco/image_04.png" alt="">4</li>
+    <li><img src="./img/coco/image_05.png" alt="">5</li>
+    <li><img src="./img/coco/image_06.png" alt="">6</li>
+</ul>
+</body>
+</html>
