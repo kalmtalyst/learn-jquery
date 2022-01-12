@@ -1,0 +1,37 @@
+@import url(reset.css);
+
+dl {
+  margin: auto;
+  border: 1px solid red;
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+}
+
+dt {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  font-size: 20px;
+  border-top: 1px solid #aaa;
+}
+
+dd {
+  text-align: justify;
+  border-top: 1px solid #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+}
+dt.on {
+  background-color: #181818;
+  font-weight: bold;
+  color: #fff;
+}
+
+dd.cc {
+  color: tomato;
+  background-color: wheat;
+  font-weight: bold;
+}
