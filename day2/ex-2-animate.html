@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {color:#fff;;text-align: center;margin-top:10px;width: 100px;height: 100px;background-color: tomato;position: relative}
+  </style>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function() {
+      $('.btn1').click(function() {
+        $('#box1').animate({width:'600px'})
+        $('#box1').animate({width:'100px'})
+      })
+      $('.btn2').click(function() {
+        $('#box1').animate({width:'600px',height:'100px',opacity:'0.5'})
+        $('#box1').animate({width:'100px',height:'100px',opacity:'1'})
+      })
+
+      $('.btn3').click(function() {
+        $('#box1').animate({left:"+=50px"})
+      })
+      $('.btn4').click(function() {
+        $('#box1').animate({left:"-=50px"})
+      })
+    })
+  </script>
+</head>
+<body>
+  <button class="btn1">Button1</button>
+  <button class="btn2">Button2</button>
+  <button class="btn3">Button3</button>
+  <button class="btn4">Button4</button>
+  <div id="box1">BOX</div>
+</body>
+</html>
