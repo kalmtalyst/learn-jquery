@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url(css/reset.css);
+    html {
+      height: 100%;
+      background: url(img/08.jpg) no-repeat center / cover;
+      position: relative;
+    }
+    #gnb {
+      position: fixed;
+      z-index: 100;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      width: 250px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100px;    
+    }
+    #gnb li {
+      height: 60px;
+      overflow: hidden;
+    }
+    #gnb a{
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'arial';
+      color: #fff;
+      opacity: 0.5;      
+      /* position! */
+      position: relative;
+    }
+  </style>
+  <script src="libs/jquery-3.4.1.min.js"></script>
+  <script>
+    $(function() {
+      for(let i = 0;i <= 3; i++){
+        let newA = $('#gnb li').eq(i).children('a').clone(true);
+        newA.css({opacity: 1})
+        $('#gnb li').eq(i).append(newA);
+
+        $('#gnb li').eq(i).on('mouseenter',function(){
+          $(this).children('a').stop().animate({top:'-60px'})
+        })
+        $('#gnb li').eq(i).on('mouseleave',function() {
+          $(this).children('a').stop().animate({top:'0px'})
+        })
+      }
+    })
+  </script>
+</head>
+<body>
+  <ul id="gnb">
+    <li><a href="#">MENU1</a></li>
+    <li><a href="#">MENU2</a></li>
+    <li><a href="#">MENU3</a></li>
+    <li><a href="#">MENU4</a></li>
+  </ul>
+</body>
+</html>
