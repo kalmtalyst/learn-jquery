@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/fixed-menu.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="libs/jquery-3.4.1.min.js"></script>
+</head>
+<script>
+  $(function() {
+    $(window).on('scroll',function() {
+      let scrollValue = $(this).scrollTop();
+      let headerTop = $('header').position().top;
+      
+      if (scrollValue > headerTop) {
+        $('header').addClass('fix');
+      } else {
+        $('header').removeClass('fix')
+      }
+    })
+  })
+</script>
+<body>
+  <div>
+    <header>
+      <ul class="gnb">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">WORK1</a></li>
+        <li><a href="#">WORK2</a></li>
+        <li><a href="#">WORK3</a></li>
+      </ul>
+    </header>
+    <div class="contents-box">
+      <p>
+        DDDDLorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam ipsa velit provident laborum, natus accusantium placeat quisquam hic odit obcaecati perferendis adipisci. Deserunt suscipit maiores eum accusamus quis possimus? Nisi?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis sequi doloremque nihil repellendus ipsa minima maiores natus, quibusdam ipsum excepturi tempore earum reiciendis, labore, perspiciatis quaerat voluptatem exercitationem nulla alias.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam hic iure possimus quia! Cum, ratione! Eum modi vel in, culpa quasi necessitatibus. Dolor hic eos sunt ducimus, voluptatibus pariatur fuga.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eveniet voluptate voluptatum, dolorum nihil nostrum doloremque iste doloribus deserunt omnis. Amet esse repellat nihil tempore itaque! Quisquam minus voluptas expedita! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque reiciendis nesciunt quibusdam laudantium fuga magnam cupiditate natus ipsum! Culpa a, saepe odit laborum fugit distinctio necessitatibus quos dolore ducimus nemo!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellat, magnam asperiores, quisquam nam ducimus illum sapiente a assumenda maiores vitae error praesentium excepturi recusandae soluta consequuntur, tempora laborum quas! Culpa Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam voluptatem, tempore voluptatum commodi saepe inventore officiis iste odit illum quaerat quas, at est sequi tenetur, nemo rerum perspiciatis architecto?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa 
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit numquam quo aliquam id accusantium accusamus debitis corporis illum quod quos culpa quidem facere autem enim atque natus, maiores error! Labore? tempore obcaecati saepe. Nesciunt, earum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laborum dolores, impedit quod ex dignissimos in harum architecto, earum facere vitae maxime inventore dolore, voluptates libero odit! Eos, nemo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus sed provident accusantium optio exercitationem magni, omnis deserunt sequi veritatis distinctio alias ex tempore placeat temporibus molestiae magnam vel illo?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa 
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minima vitae dolorem! Eum quaerat, nisi minus deleniti odit expedita cupiditate veniam magnam ipsam. Est natus autem unde accusamus voluptate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ut optio ad exercitationem nostrum ea eius debitis hic ipsum! Suscipit magni alias nulla optio, esse hic nemo. Ad, ducimus quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime sit ex? Non illum neque adipisci sapiente. Perferendis a delectus beatae ullam vel enim pariatur, tempore obcaecati saepe. Nesciunt, earum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laborum dolores, impedit quod ex dignissimos in harum architecto, earum facere vitae maxime inventore dolore, voluptates libero odit! Eos, nemo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus sed provident accusantium optio exercitationem magni, omnis deserunt sequi veritatis distinctio alias ex tempore placeat temporibus molestiae magnam vel illo?tempore obcaecati saepe. Nesciunt, earum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit laborum dolores, impedit quod ex dignissimos in harum architecto, earum facere vitae maxime inventore dolore, voluptates libero odit! Eos, nemo hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellendus sed provident accusantium optio exercitationem magni, omnis deserunt sequi veritatis distinctio alias ex tempore placeat temporibus molestiae magnam vel illo?
+      </p>
+    </div>
+  </div>
+</body>
+</html>
