@@ -1,0 +1,63 @@
+@import url(reset.css);
+
+html,
+body {
+  height: 100%;
+}
+.section {
+  height: 100%;
+  position: relative;
+}
+.section h1 {
+  font-size: 150px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#section1 {
+  background-color: slateblue;
+}
+#section2 {
+  background-color: paleturquoise;
+}
+#section3 {
+  background-color: palegreen;
+}
+#section4 {
+  background-color: palevioletred;
+}
+
+#navi {
+  position: absolute;
+  right: 0;
+  width: 160px;
+  background: #fff;
+  z-index: 1000;
+}
+#navi li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+}
+
+#navi li:nth-child(1) a.on {
+  background: #81c496;
+  color: #fff;
+}
+#navi li:nth-child(2) a.on {
+  background: #cc6945;
+  color: #fff;
+}
+#navi li:nth-child(3) a.on {
+  background: #d41257;
+  color: #fff;
+}
+#navi li:nth-child(4) a.on {
+  background: #053578;
+  color: #fff;
+}
